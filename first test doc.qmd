@@ -2,7 +2,6 @@
 title: "test doc 5 pm"
 author: "Max T"
 format: html
-editor: visual
 ---
 
 ```{r}
@@ -11,4 +10,11 @@ library(tidyverse)
 library(lterdatasampler)
 data(pie_crab)
 
+```
+
+```{r}
+ggplot(data = pie_crab,
+       aes(x = latitude,
+           y = size)) +
+  geom_point()
 ```
